@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+        app:title="Liên Hệ"
+        android:background="#5DD6B0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" >
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Họ Tên: Đặng Trần Minh Trung"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp" />
+    <TextView
+        android:id="@id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: Onlycminhtrung@gmail.com"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khoa Điện - Điện Tử Trường Đại Học Mở Hà Nội"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_dai_hoc_mo_ha_noi_inkythuatso_01_23_08_58_23_w720"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
